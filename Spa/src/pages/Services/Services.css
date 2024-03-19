@@ -1,0 +1,13 @@
+.cardsBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  list-style: none;
+  text-align: center;
+}

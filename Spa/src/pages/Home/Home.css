@@ -1,0 +1,32 @@
+body {
+  background-image: url("../../assets/pictures/hero.jpeg");
+  background-size: cover;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  gap: 10px;
+  padding: 20px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  gap: 10px;
+}
+header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+}
