@@ -1,0 +1,74 @@
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.header-nav-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 10px 200px;
+}
+.header-nav-bar .left-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-nav-bar .right-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 20px;
+}
+.header-nav-bar li {
+  list-style: none;
+  padding: 0 10px;
+}
+.header-nav-bar li button {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.header-nav-bar .dropdown-content li button {
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.header-nav-bar img {
+  width: auto;
+  height: 20px;
+}

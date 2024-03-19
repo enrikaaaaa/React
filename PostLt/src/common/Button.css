@@ -1,0 +1,37 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.secondary {
+  background-color: #9c27b0;
+}
+.white {
+  background-color: white;
+  color: black;
+}
+.arrow::after {
+  background-color: transparent;
+  color: lightskyblue;
+  content: " >";
+}
+.arrow {
+  background-color: transparent;
+  color: lightskyblue;
+}
+.white:hover {
+  background-color: black;
+  color: white;
+}
+.arrow_before::before {
+  color: lightslategray;
+  content: "> ";
+}
+.arrow_before {
+  background-color: transparent;
+  color: lightslategray;
+  padding: 0%;
+}

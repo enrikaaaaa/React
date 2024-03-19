@@ -1,0 +1,240 @@
+.news-conteiner-card,
+.news-conteiner-card-1,
+.news-conteiner-card-postman {
+  width: 50%;
+  height: max-content;
+  border-radius: 10px;
+  position: relative;
+}
+.news-conteiner-card-postman img {
+  height: 710px;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+.news-conteiner {
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+  max-width: 1340px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.news-conteiner-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.news-conteiner .h2 {
+  width: min-content;
+  justify-self: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid yellow;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.news-conteiner-card img {
+  width: 100%;
+  height: max-content;
+  border-radius: 5px;
+}
+
+.latest-news div {
+  padding-bottom: 10px;
+  margin: 10px 20px;
+}
+
+.latest-news {
+  border-bottom: lightgrey 1px solid;
+}
+
+.news-conteiner-card:first-child {
+  background-color: #f5f5f5;
+}
+
+.news-conteiner-card iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.half-block img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.half-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.text {
+  text-align: center;
+}
+
+.declaration-text {
+  position: absolute;
+  top: 80%;
+  left: 40px;
+  z-index: 3;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.declaration-text button {
+  margin-top: 20px;
+}
+
+.news-container-card-send {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  z-index: 3;
+  top: 1600px;
+  left: 120px;
+  flex-wrap: wrap;
+  height: 180px;
+  position: absolute;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.news-conteiner-card img {
+  z-index: 1;
+  position: relative;
+  border-radius: 5px;
+}
+
+.news-container-card-send .text {
+  text-align: left;
+  width: 50%;
+}
+
+.register-text,
+.register-text-2,
+.terminal-text {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  z-index: 3;
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+  height: 100px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  border: none;
+}
+
+.register-text-2 {
+  top: 60%;
+  font-size: 40px;
+  flex-wrap: nowrap;
+  gap: 60px;
+  padding: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.terminal-text {
+  width: 40%;
+  gap: 20px;
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.terminal-text .text .h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px;
+  border: none;
+}
+.terminal-text button {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.news-conteiner-card-1 img {
+  height: 500px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.news-conteiner-card-1 .text {
+  padding: 20px;
+}
+
+.text {
+  text-align: left;
+}
+
+.icon {
+  height: auto;
+  display: flex;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.div-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 5px;
+}
+.three-cards,
+.four-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.four-cards {
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.div-bottom button {
+  padding: 0%;
+}

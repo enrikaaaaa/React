@@ -1,0 +1,11 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.buttons-add,
+.buttons-remove {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

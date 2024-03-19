@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.forecastBlock,
+.dayForecast {
+  display: flex;
+  flex-direction: row;
+}
+.forecastCard {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #000;
+  gap: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+.forecastHeadline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.fToC {
+  width: 50px;
+  height: auto;
+}
+button,
+select {
+  background-color: transparent;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+button:hover,
+select:hover {
+  background-color: #f5f5f5;
+}
+p {
+  font-weight: bold;
+}

@@ -1,0 +1,10 @@
+.About-section {
+  display: flex;
+  justify-content: center;
+  color: black;
+  height: auto;
+}
+p {
+  text-decoration: none;
+  color: black;
+}

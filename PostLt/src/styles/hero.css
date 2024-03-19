@@ -1,0 +1,56 @@
+.right-side-hero-text,
+.left-side-hero-text {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+  position: absolute;
+  top: 28%;
+  right: 14%;
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.left-side-hero-text {
+  left: 14%;
+  right: auto;
+  align-items: flex-start;
+  width: fit-content;
+  padding: 20px;
+}
+.left-side-hero-text img {
+  width: 30px;
+  height: auto;
+  padding-right: 20px;
+}
+.news-card {
+  display: flex;
+  flex-direction: row;
+}
+.left-side-hero-text div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.left-side-hero-text li {
+  text-decoration: none;
+}
+.left-side-hero-text button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 10px 10px 0px;
+}
+li {
+  text-decoration: none;
+}
