@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Text from "../../common/Text";
 import Nav from "../../common/Nav";
 import "./Footer.css";
 
@@ -19,7 +18,7 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <Nav className="nav-footer" />
-        <Text className="footer-text">Copyright © {currentDate}</Text>
+        <p>Copyright © {currentDate}</p>
       </div>
     </footer>
   );
