@@ -19,9 +19,7 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <Nav className="nav-footer" />
-        <Text className="footer-text">
-          Copyright © Your Company {currentDate}
-        </Text>
+        <Text className="footer-text">Copyright © {currentDate}</Text>
       </div>
     </footer>
   );

@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header";
 import Image from "../../common/Image";
-import image from "../../assets/pictures/logo.png";
+import image from "../../assets/pictures/work_1.jpg";
 import "./Works.css";
 import Text from "../../common/Text";
 import Footer from "../../components/Footer/Footer";
