@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 function Knowledge(props) {
   return (
     <div className="knowledge" id="2">
-      {/* <div className="knowledge-content"> */}
       <div className="knowledge-content-item">
         <h2>{props.h2}</h2>
         <ListItem />

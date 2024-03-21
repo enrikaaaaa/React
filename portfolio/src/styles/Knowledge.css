@@ -5,3 +5,33 @@
   justify-content: center;
   color: black;
 }
+.knowledge:hover {
+  transform: translateY(10px);
+}
+.knowledge-content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.knowledge-content-item h2,
+.knowledge-content-item li,
+.knowledge-container h1 {
+  text-align: center;
+}
+.knowledge-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin-bottom: 60px;
+}
