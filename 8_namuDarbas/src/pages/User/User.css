@@ -1,0 +1,132 @@
+.usersContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 10px;
+}
+.usersContainer span {
+  width: 40%;
+}
+
+.userCard,
+.OneUserCard {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px;
+  box-shadow: 1px 1px 5px 1px #000000;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  background-color: #f0f0f0;
+}
+.OneUserCard {
+  width: 40%;
+}
+.userCard {
+  cursor: pointer;
+}
+
+.userCard div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.userCard div p :nth-last-of-type(1) {
+  width: 20%;
+  margin: 0;
+}
+
+.adressBlock > div,
+.companyBlock > div {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.adressBlock p,
+.userInfo p,
+.companyBlock p {
+  width: 50%;
+}
+
+.userCardOwnerName {
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 2px solid #a31414;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.userInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.userInfoConainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+h2 {
+  text-align: center;
+}
+.back-button {
+  position: fixed;
+  bottom: 80px;
+  right: 0px;
+  width: 70px;
+  height: 70px;
+  background: url(../../assets/pictures/back.png) no-repeat center/contain;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.back-button:active {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 796px) {
+  .usersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .OneUserCard,
+  .usersContainer span .userCard {
+    width: 80%;
+  }
+  .usersContainer span {
+    width: 80%;
+  }
+  footer {
+    padding: 5px;
+  }
+  footer p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .back-button {
+    bottom: 120px;
+    width: 30px;
+    height: 30px;
+  }
+  body {
+    padding: 0%;
+    margin: 0%;
+  }
+}
