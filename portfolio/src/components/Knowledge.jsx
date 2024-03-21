@@ -6,15 +6,14 @@ import PropTypes from "prop-types";
 function Knowledge(props) {
   return (
     <div className="knowledge" id="2">
-      {/* <h1>Knowledge</h1> */}
-      <div className="knowledge-content">
-        <div className="knowledge-content-item">
-          <h2>{props.h2}</h2>
-          <ListItem />
-          {props.children}
-        </div>
+      {/* <div className="knowledge-content"> */}
+      <div className="knowledge-content-item">
+        <h2>{props.h2}</h2>
+        <ListItem />
+        {props.children}
       </div>
     </div>
+    // </div>
   );
 }
 

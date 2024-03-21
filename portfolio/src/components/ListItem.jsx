@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function ListItem(props) {
   return (
     <ul>
@@ -5,5 +7,9 @@ function ListItem(props) {
     </ul>
   );
 }
+
+ListItem.propTypes = {
+  li: PropTypes.string.isRequired,
+};
 
 export default ListItem;
