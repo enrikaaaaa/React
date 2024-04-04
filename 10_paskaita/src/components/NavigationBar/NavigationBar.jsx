@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
 import Button from "../Button/Button";
-import styles from "./NavigationBar.module.scss";
+import { Link } from "react-router-dom";
 import { navigationBarLinks } from "../../routes/consts";
+import styles from "./NavigationBar.module.scss";
+import { useState } from "react";
 
 const NavigationBar = () => {
   const [showMenu, setShowMenu] = useState(false);

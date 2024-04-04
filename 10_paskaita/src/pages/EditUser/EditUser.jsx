@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { fetchUsers, updateUser } from "../../api/users";
+import { useEffect, useState } from "react";
+
 import Loader from "../../components/Loader";
 import { ROUTES } from "../../routes/consts";
 import styles from "./EditUser.module.scss";
@@ -25,7 +26,7 @@ const EditUser = () => {
         .finally(() => {
           setIsLoading(false);
         });
-    }, 2000);
+    }, 1000);
   }, [id]);
 
   const handleSubmit = async (event) => {
@@ -61,6 +62,7 @@ const EditUser = () => {
           value={user.name}
           onChange={(event) => setUser({ ...user, name: event.target.value })}
         />
+
         <input
           className={styles.inputField}
           id="surname"

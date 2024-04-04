@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import Loader from "../../components/Loader";
-import { fetchCourses } from "../../api/courses";
+
 import CourseList from "./CourseList";
+import Loader from "../../components/Loader";
 import Modal from "../../components/Modal/Modal";
 import NewCourse from "./NewCourse";
+import { fetchCourses } from "../../api/courses";
 import styles from "./Courses.module.scss";
 
 const Courses = () => {

@@ -10,6 +10,18 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "importSort": {
+    ".js, .jsx, .es6, .es": {
+      "parser": "babylon",
+      "style": "eslint",
+      "options": {}
+    },
+    ".ts, .tsx": {
+      "parser": "typescript",
+      "style": "eslint",
+      "options": {}
+    }
+  },
   "dependencies": {
     "axios": "^1.6.8",
     "classnames": "^2.5.1",

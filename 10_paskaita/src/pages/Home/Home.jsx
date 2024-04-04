@@ -1,12 +1,13 @@
-import { useState, useEffect } from "react";
-import { useNavigate, generatePath } from "react-router-dom";
-import { fetchUsers, deleteUser } from "../../api/users";
-import UserList from "./UserList";
+import { deleteUser, fetchUsers } from "../../api/users";
+import { generatePath, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import Loader from "../../components/Loader";
-import { ROUTES } from "../../routes/consts";
-import styles from "./Home.module.scss";
-import NewUser from "../NewUser/NewUser";
 import Modal from "../../components/Modal/Modal";
+import NewUser from "../NewUser/NewUser";
+import { ROUTES } from "../../routes/consts";
+import UserList from "./UserList";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   const [users, setUsers] = useState([]);

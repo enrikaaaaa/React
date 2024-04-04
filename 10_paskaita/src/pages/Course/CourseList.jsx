@@ -1,9 +1,9 @@
-import Modal from "../../components/Modal/Modal";
 import EditCourse from "./EditCourse";
-import { useState } from "react";
+import Modal from "../../components/Modal/Modal";
 import PropTypes from "prop-types";
 import { deleteCourse } from "../../api/courses";
 import styles from "./CourseList.module.scss";
+import { useState } from "react";
 
 const CourseList = ({ courses, setCourses }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,8 @@
-import PropTypes from "prop-types";
+import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import { Link, generatePath } from "react-router-dom";
+
+import PropTypes from "prop-types";
 import { ROUTES } from "../../routes/consts";
-import { FaEdit, FaTrashAlt } from "react-icons/fa"; // Importing icons from react-icons
 
 const UserList = ({ users, handleEditUser, handleDeleteUser }) => {
   return (

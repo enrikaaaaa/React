@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { fetchUsers } from "../../api/users";
+import { useEffect, useState } from "react";
+
 import Loader from "../../components/Loader";
 import { ROUTES } from "../../routes/consts";
+import { fetchUsers } from "../../api/users";
 import styles from "./User.module.scss";
 
 const User = () => {

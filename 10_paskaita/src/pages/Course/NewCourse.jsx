@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom";
-import { createCourse } from "../../api/courses";
-import { ROUTES } from "../../routes/consts";
 import PropTypes from "prop-types";
+import { ROUTES } from "../../routes/consts";
+import { createCourse } from "../../api/courses";
 import styles from "./NewCourse.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const NewCourse = ({ setCourses, setIsOpen }) => {
   const navigate = useNavigate();

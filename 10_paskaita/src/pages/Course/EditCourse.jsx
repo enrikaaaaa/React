@@ -1,9 +1,10 @@
-import { useNavigate } from "react-router-dom";
-import { updateCourse, getCourseById } from "../../api/courses";
-import { ROUTES } from "../../routes/consts";
+import { getCourseById, updateCourse } from "../../api/courses";
+import { useEffect, useState } from "react";
+
 import PropTypes from "prop-types";
-import { useState, useEffect } from "react";
+import { ROUTES } from "../../routes/consts";
 import styles from "./EditCourse.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const EditCourse = ({ courseId, setIsOpen }) => {
   const navigate = useNavigate();
