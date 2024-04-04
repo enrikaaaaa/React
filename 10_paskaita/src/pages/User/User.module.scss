@@ -1,0 +1,36 @@
+.userContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.goBackLink {
+  display: block;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.userTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.userNotFound {
+  margin-top: 20px;
+  color: red;
+}
+
+.userInfo {
+  margin-top: 20px;
+}
+
+.userInfo p {
+  margin-bottom: 10px;
+}

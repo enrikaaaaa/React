@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "Rokas",
+      "surname": "Tokas",
+      "id": 1
+    },
+    {
+      "name": "Enrika",
+      "surname": "Rudzikiene",
+      "id": 2,
+      "age": "32"
+    }
+  ],
+  "courses": [
+    {
+      "id": 2,
+      "title": "English",
+      "description": "English is a West Germanic language that was first spoken in early medieval England and is now a global lingua franca.",
+      "length": "1 year"
+    },
+    {
+      "id": "4b795j2pu",
+      "title": "Math",
+      "description": "Mathematics is the science and study of quality, structure, space, and change. Mathematicians seek out patterns, formulate new conjectures, and establish truth by rigorous deduction from appropriately chosen axioms and definitions.",
+      "length": "5"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+.newCourseForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newCourseTitle {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.newCourseInput {
+  margin-bottom: 20px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.newCourseButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.newCourseButton:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
