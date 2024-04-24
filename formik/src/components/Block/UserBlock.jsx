@@ -1,11 +1,10 @@
-import Button from "@mui/material/Button";
-import { ButtonBase } from "@mui/material";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import { Button, ButtonBase, Card, CardContent } from "@mui/material";
+
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { useState } from "react";
 
 const UserContainer = styled.div`
   background-color: #f9f9f9;
@@ -28,14 +27,27 @@ const CardsContent = styled(Card)`
   margin-top: 20px;
   justify-content: flex-start;
 `;
+
 const HandledDeleteIcon = styled(DeleteIcon)`
   color: red;
 `;
+
 const HandleEditIcon = styled(EditIcon)`
   color: green;
 `;
 
+const HandleEdit = (userId) => {
+  console.log("Edit user with ID:", userId);
+};
+
 const UserBlock = ({ users }) => {
+  const [userList, setUserList] = useState(users);
+
+  const HandleDelete = (userId) => {
+    const updatedUsers = userList.filter((user) => user.id !== userId);
+    setUserList(updatedUsers);
+  };
+
   return (
     <div>
       <CardsContent>
@@ -72,10 +84,10 @@ const UserBlock = ({ users }) => {
               {user.company.catchPhrase}, {user.company.bs}
             </CardContent>
             <ButtonBase>
-              <Button>
+              <Button onClick={() => HandleEdit(user.id)}>
                 <HandleEditIcon />
               </Button>
-              <Button>
+              <Button onClick={() => HandleDelete(user.id)}>
                 <HandledDeleteIcon />
               </Button>
             </ButtonBase>
