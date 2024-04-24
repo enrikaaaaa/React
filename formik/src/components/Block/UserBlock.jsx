@@ -1,10 +1,10 @@
-import { Button, ButtonBase, Card, CardContent } from "@mui/material";
+import { ButtonBase, Card, CardContent } from "@mui/material";
+import { useEffect, useState } from "react";
 
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { useState } from "react";
 
 const UserContainer = styled.div`
   background-color: #f9f9f9;
@@ -12,7 +12,7 @@ const UserContainer = styled.div`
   flex-direction: column;
   padding: 10px;
   width: 30vw;
-  height: 50vh;
+  min-height: 200px;
   border-radius: 15px;
   box-shadow: 2px 2px 5px #200ec7c9;
   border: 1px solid #200ec7c9;
@@ -26,6 +26,10 @@ const CardsContent = styled(Card)`
   justify-content: center;
   margin-top: 20px;
   justify-content: flex-start;
+`;
+
+const HandledButtonBase = styled(ButtonBase)`
+  gap: 20px;
 `;
 
 const HandledDeleteIcon = styled(DeleteIcon)`
@@ -43,6 +47,10 @@ const HandleEdit = (userId) => {
 const UserBlock = ({ users }) => {
   const [userList, setUserList] = useState(users);
 
+  useEffect(() => {
+    setUserList(users);
+  }, [users]);
+
   const HandleDelete = (userId) => {
     const updatedUsers = userList.filter((user) => user.id !== userId);
     setUserList(updatedUsers);
@@ -51,7 +59,7 @@ const UserBlock = ({ users }) => {
   return (
     <div>
       <CardsContent>
-        {users.map((user) => (
+        {userList.map((user) => (
           <UserContainer key={user.id}>
             <CardContent>
               <strong>ID:</strong> {user.id}
@@ -83,14 +91,14 @@ const UserBlock = ({ users }) => {
               <strong>Company:</strong> {user.company.name},
               {user.company.catchPhrase}, {user.company.bs}
             </CardContent>
-            <ButtonBase>
-              <Button onClick={() => HandleEdit(user.id)}>
+            <HandledButtonBase>
+              <div onClick={() => HandleEdit(user.id)}>
                 <HandleEditIcon />
-              </Button>
-              <Button onClick={() => HandleDelete(user.id)}>
+              </div>
+              <div onClick={() => HandleDelete(user.id)}>
                 <HandledDeleteIcon />
-              </Button>
-            </ButtonBase>
+              </div>
+            </HandledButtonBase>
           </UserContainer>
         ))}
       </CardsContent>
